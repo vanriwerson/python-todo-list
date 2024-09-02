@@ -1,0 +1,116 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #3d3d3d;
+  padding: 20px;
+  width: 100vw;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #fffefe;
+}
+
+/* Estilo do input e botão */
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo da lista de todos */
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-list li {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  color: #000;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 300px;
+}
+
+.todo-list li span{
+  font-size: 1.2rem;
+}
+
+/* Estilo para tarefas concluídas */
+.todo-list li.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.todo-list li span {
+  cursor: pointer;
+}
+
+.edit-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.edit-container input {
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.edit-container button {
+  padding: 5px 10px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-container button:hover {
+  background-color: #0056b3;
+}
+
+.todo-list li button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.todo-list li button:hover {
+  background-color: #c82333;
+}
